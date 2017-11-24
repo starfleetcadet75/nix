@@ -126,7 +126,7 @@ libc_bitflags! {
 /// `ptrace` always returns a machine word. This type provides an abstraction
 /// of the fact that on *nix systems, `c_long` is always a machine word,
 /// so as to prevent the library from leaking C implementation-dependent types.
-type Word = usize;
+pub type Word = usize;
 
 /// Returns the register containing nth register argument.
 ///
